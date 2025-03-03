@@ -37,7 +37,7 @@ export const projects = [
       name: 'ИИ-сотрудник',
       icon: '🧠',
       image: 'https://cdn-icons-png.flaticon.com/512/8637/8637114.png',
-      images: ['/ai_emp.png', '/ai_call.png', '/ai_task.png'],
+      images: ['/ai_emp.png', '/ai_call.png', '/t.jpg', '/t_1.jpg', '/ai_task.png'],
       description: 'Виртуальный ассистент с искусственным интеллектом',
       tasks: [
         'Правки приложения под описание вендора',
