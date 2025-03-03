@@ -3,11 +3,11 @@
     <div v-if="openImg" class="fixed bg-black w-full h-full top-0 left-0 z-10">
       <button class="float-right p-2 mr-5" @click="() => {openImg = false}">X</button>
       <div class="w-full flex">
-        <button class="w-[16%]" @click="() => {project.images[currentOpenImg - 1]? currentOpenImg--: currentOpenImg}">prev</button>
-        <div class="w-[68%]">
-          <img class="m-auto" :src="project.images[currentOpenImg]">
+        <button class="w-[10%] m-auto" @click="() => {project.images[currentOpenImg - 1]? currentOpenImg--: currentOpenImg}">prev</button>
+        <div class="w-auto  m-auto">
+          <img class="h-[90vh]" :src="project.images[currentOpenImg]">
         </div>
-        <button class="w-[16%]" @click="() => {project.images[currentOpenImg + 1]? currentOpenImg++: currentOpenImg}">next</button>
+        <button class="w-[10%] m-auto" @click="() => {project.images[currentOpenImg + 1]? currentOpenImg++: currentOpenImg}">next</button>
       </div>
     </div>
     <div :class="openImg? 'blur matrix-project-page': 'matrix-project-page'">
